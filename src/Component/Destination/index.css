@@ -1,0 +1,63 @@
+.destination_wrapper {
+  background: url("../../assets/destination_bck.svg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.destination_wrapper .top {
+  width: 80%;
+  margin: 2rem auto;
+}
+.destination_wrapper .top h3 {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+}
+.destination_wrapper .top span {
+  opacity: 0.25;
+}
+.destination_wrapper .bottom {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.destination_wrapper .left,
+.destination_wrapper .right {
+  flex: 1;
+}
+.destination_wrapper .right ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+.destination_wrapper .right h1 {
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.destination_wrapper .right p {
+  color: #d0d6f9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin: 2rem 0;
+}
+.destination_wrapper .right hr{
+    color: #383B4B;
+}
