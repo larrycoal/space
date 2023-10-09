@@ -7,6 +7,7 @@ import "./App.css";
 import Home from "./Component/Home";
 import Header from "./Component/Header";
 import Destination from "./Component/Destination";
+import Crew from "./Component/Crew"
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ function App() {
     {
       path: "destination",
       element: <Destination />,
+    },
+    {
+      path: "crew",
+      element: <Crew/>,
     },
   ]);
   return (
