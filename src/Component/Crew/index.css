@@ -1,0 +1,94 @@
+.crew_wrapper {
+  background: url("../../assets/crew_bck.svg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2rem;
+  display: flex;
+}
+.crew_wrapper .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 80%;
+  margin: 0 auto;
+}
+.left,
+.right {
+  flex: 1;
+}
+.crew_wrapper .left {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.crew_wrapper .left h2{
+    margin: 2rem 0;
+}
+.crew_wrapper .left h2 span:nth-child(2) {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.crew_wrapper .left h2 span:nth-child(1) {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+}
+.crew_details p:nth-child(1) {
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5042;
+}
+.crew_details h1 {
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.crew_details p:nth-child(3) {
+  color: #d0d6f9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; 
+  margin: 2rem 0;
+}
+.crew_details ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.crew_details ul li{
+  border-radius: 100%;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.4;
+}
+.crew_details ul .active{
+    opacity: 1;
+}
