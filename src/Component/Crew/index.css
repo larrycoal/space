@@ -5,7 +5,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 2rem;
+  background-attachment: fixed;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+.commander_wrapper,
+.specialist_wrapper,
+.pilot_wrapper,
+.engineer_wrapper {
+  height: 100vh;
   display: flex;
+  scroll-snap-align: center;
 }
 .crew_wrapper .container {
   display: flex;
@@ -25,8 +35,8 @@
   justify-content: space-around;
   gap: 1rem;
 }
-.crew_wrapper .left h2{
-    margin: 2rem 0;
+.crew_wrapper .left h2 {
+  margin: 2rem 0;
 }
 .crew_wrapper .left h2 span:nth-child(2) {
   color: #fff;
@@ -74,21 +84,21 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; 
+  line-height: 32px;
   margin: 2rem 0;
 }
-.crew_details ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.crew_details ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
-.crew_details ul li{
+.crew_details ul li {
   border-radius: 100%;
   padding: 10px;
   background-color: #fff;
   cursor: pointer;
   opacity: 0.4;
 }
-.crew_details ul .active{
-    opacity: 1;
+.crew_details ul .active {
+  opacity: 1;
 }
