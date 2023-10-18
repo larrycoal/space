@@ -1,0 +1,122 @@
+.technology_wrapper {
+  background: url("../../assets/technology_bck.svg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2rem;
+  background-attachment: fixed;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: flex-end;
+}
+.technology_wrapper > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  padding: 1rem 0;
+  max-height: 100vh;
+  margin: 6rem 0;
+}
+.technology_wrapper > .container h2 {
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+.technology_wrapper > .container h2 span:nth-child(1) {
+  opacity: 0.25;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+.technology_wrapper > .container > .content_wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.technology_wrapper > .container > .content_wrapper > .content {
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+.technology_wrapper > .container > .content_wrapper > .content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.technology_wrapper > .container > .content_wrapper > .content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.technology_wrapper > .container > .content_wrapper > .navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.technology_wrapper > .container > .content_wrapper > .navigation ul li {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.technology_wrapper .content_wrapper .content .launch,
+.technology_wrapper .content_wrapper .content .spacesport,
+.technology_wrapper .content_wrapper .content .capsule {
+  display: flex;
+  min-width: 100%;
+  gap: 3rem;
+  scroll-snap-align: center;
+}
+.technology_wrapper .content_wrapper .content .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin: 3rem;
+}
+.technology_wrapper .content_wrapper .content .left p:nth-child(1) {
+  color: #d0d6f9;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.technology_wrapper .content_wrapper .content .left h1 {
+  color: #fff;
+  font-family: Bellefair;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.technology_wrapper .content_wrapper .content .left p:nth-child(3) {
+  color: #d0d6f9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  margin: 1rem 0;
+}
