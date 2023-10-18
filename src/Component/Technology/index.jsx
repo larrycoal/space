@@ -4,7 +4,17 @@ import "./index.css";
 import launch from "../../assets/launch.svg";
 import capsule from "../../assets/capsule.svg";
 import spacesport from "../../assets/spacesport.png";
+import { useState, useEffect, useRef } from "react";
 const index = () => {
+  const [visiblePage, setvisiblePage] = useState("#launch");
+  const launchRef = useRef()
+  useEffect(() => {
+    console.log(launchRef.current)
+  }, []);
+  const handleVisiblePage = (page) => {
+    window.location.href = page;
+    setvisiblePage(page);
+  };
   return (
     <>
       <Header />
@@ -19,13 +29,28 @@ const index = () => {
           <div className="content_wrapper">
             <div className="navigation">
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li
+                  className={visiblePage === "#launch" ? "active" : ""}
+                  onClick={() => handleVisiblePage("#launch")}
+                >
+                  1
+                </li>
+                <li
+                  className={visiblePage === "#spacesport" ? "active" : ""}
+                  onClick={() => handleVisiblePage("#spacesport")}
+                >
+                  2
+                </li>
+                <li
+                  className={visiblePage === "#capsule" ? "active" : ""}
+                  onClick={() => handleVisiblePage("#capsule")}
+                >
+                  3
+                </li>
               </ul>
             </div>
             <div className="content">
-              <div className="launch">
+              <div className="launch" id="launch" ref={launchRef}>
                 <div className="left">
                   <p>The terminology...</p>
                   <h1>Launch Vehicle</h1>
@@ -43,7 +68,7 @@ const index = () => {
                   <img src={launch} alt="launch vehicle" />
                 </div>
               </div>
-              <div className="spacesport">
+              <div className="spacesport" id="spacesport">
                 <div className="left">
                   <p>The terminology...</p>
                   <h1>SPACEPORT</h1>
@@ -60,7 +85,7 @@ const index = () => {
                   <img src={spacesport} alt="launch vehicle" />
                 </div>
               </div>
-              <div className="capsule">
+              <div className="capsule" id="capsule">
                 <div className="left">
                   <p>The terminology...</p>
                   <h1>SPACE CAPSULE</h1>

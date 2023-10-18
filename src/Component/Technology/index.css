@@ -44,6 +44,7 @@
   display: flex;
   overflow: scroll;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 .technology_wrapper > .container > .content_wrapper > .content::-webkit-scrollbar {
   display: none;
@@ -61,6 +62,10 @@
   justify-content: center;
   gap: 1rem;
 }
+.technology_wrapper > .container > .content_wrapper > .navigation ul .active{
+    background-color: white;
+    color: black;
+}
 .technology_wrapper > .container > .content_wrapper > .navigation ul li {
   width: 80px;
   height: 80px;
@@ -76,6 +81,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .technology_wrapper .content_wrapper .content .launch,
 .technology_wrapper .content_wrapper .content .spacesport,
