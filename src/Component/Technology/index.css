@@ -181,3 +181,33 @@
     padding: 2rem;
   }
 }
+@media screen and (max-width: 700px){
+    .technology_wrapper > .container{
+        margin: 3rem 0;
+    }
+    .technology_wrapper .header{
+        font-size: 16px;
+        text-align: center;
+    }
+    .technology_wrapper > .container > .content_wrapper > .navigation ul li{
+        width: 40px;
+        height: 40px;
+    }
+    .technology_wrapper .right img{
+        aspect-ratio: 4/2;
+    }
+    .technology_wrapper .content_wrapper .content .left h1{
+        font-size: 28px;
+    }
+    .technology_wrapper .content_wrapper .content .left p:nth-child(3){
+        font-size: 16px;
+    }
+      .technology_wrapper .content_wrapper .content .launch,
+  .technology_wrapper .content_wrapper .content .spacesport,
+  .technology_wrapper .content_wrapper .content .capsule{
+    gap: 1rem;
+  }
+  .technology_wrapper > .container > .content_wrapper{
+    gap: 1rem;
+  }
+}

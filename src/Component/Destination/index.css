@@ -125,3 +125,34 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 700px){
+  .destination_wrapper .bottom img{
+    height: 259px;
+    width: 259px;
+  }
+  .destination_wrapper .right ul{
+    font-size: 14px;
+  }
+  .destination_wrapper .right li{
+    height: fit-content;
+  }
+  .destination_wrapper .right h1{
+    font-size: 56px;
+  }
+  .destination_wrapper .right .destination_details{
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .destination_wrapper .destination_sub p span:nth-child(2){
+    font-size: 20px;
+  }
+  .destination_wrapper .top{
+    margin: 1rem auto;
+   
+  }
+  .destination_wrapper .top h3{
+     font-size: 20px;
+     text-align: center;
+  }
+}

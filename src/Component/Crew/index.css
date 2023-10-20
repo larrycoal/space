@@ -129,3 +129,36 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 700px){
+  .commander_wrapper, .specialist_wrapper, .pilot_wrapper, .engineer_wrapper {
+align-items: flex-end;
+  }
+   .crew_wrapper .container .left{
+    margin-top: 0;
+  }
+  .crew_wrapper .container{
+    height: 90%;
+  }
+  .crew_wrapper .right{
+    align-items: flex-end;
+  }
+  .crew_wrapper .right img{
+    height: 300px;
+    width: 300px;
+  }
+  .crew_wrapper .left h2{
+    margin: 1rem 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .crew_details p:nth-child(1){
+    font-size: 20px;
+  }
+  .crew_details h1{
+    font-size: 28px;
+  }
+  .crew_details p:nth-child(3){
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+}
