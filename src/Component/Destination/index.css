@@ -107,3 +107,21 @@
   letter-spacing: 2.362px;
   text-transform: uppercase;
 }
+@media (max-width:1200px) {
+  .destination_wrapper .bottom{
+    flex-direction: column;
+  }
+  .destination_wrapper .left{
+    display: flex;
+    justify-content: center;
+  }
+  .destination_wrapper .right{
+    text-align: center;
+  }
+  .destination_wrapper .right ul {
+    justify-content: center;
+  }
+  .destination_wrapper .destination_sub{
+    justify-content: center;
+  }
+}

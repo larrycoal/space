@@ -46,14 +46,17 @@
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-.technology_wrapper > .container > .content_wrapper > .content::-webkit-scrollbar {
+.technology_wrapper
+  > .container
+  > .content_wrapper
+  > .content::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .technology_wrapper > .container > .content_wrapper > .content {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .technology_wrapper > .container > .content_wrapper > .navigation ul {
   list-style: none;
@@ -62,14 +65,14 @@
   justify-content: center;
   gap: 1rem;
 }
-.technology_wrapper > .container > .content_wrapper > .navigation ul .active{
-    background-color: white;
-    color: black;
+.technology_wrapper > .container > .content_wrapper > .navigation ul .active {
+  background-color: white;
+  color: black;
 }
 .technology_wrapper > .container > .content_wrapper > .navigation ul li {
   width: 80px;
   height: 80px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -82,6 +85,9 @@
   line-height: normal;
   letter-spacing: 2px;
   cursor: pointer;
+}
+.technology_wrapper > .container > .content_wrapper > .navigation ul li:hover {
+  border: 1px solid #fff;
 }
 .technology_wrapper .content_wrapper .content .launch,
 .technology_wrapper .content_wrapper .content .spacesport,
@@ -125,4 +131,53 @@
   font-weight: 400;
   line-height: 32px; /* 177.778% */
   margin: 1rem 0;
+}
+@media (max-width: 1200px) {
+  .technology_wrapper > .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .technology_wrapper .content_wrapper {
+    flex-direction: column;
+  }
+  .technology_wrapper > .container > .content_wrapper > .navigation ul {
+    width: 100%;
+    flex-direction: row;
+  }
+  .technology_wrapper .content_wrapper .content .launch,
+  .technology_wrapper .content_wrapper .content .spacesport,
+  .technology_wrapper .content_wrapper .content .capsule {
+    flex-direction: column;
+  }
+  .technology_wrapper .content_wrapper .content .left {
+    order: 2;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .technology_wrapper .left p {
+    text-align: center;
+  }
+  .technology_wrapper .left h1 {
+    text-align: center;
+  }
+  .technology_wrapper .right {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .technology_wrapper .right img {
+    object-position: bottom;
+    width: 100%;
+    aspect-ratio: 7/4;
+    object-fit: cover;
+  }
+
+  .capsule .right img {
+    object-position: center;
+  }
+  .technology_wrapper .header {
+    padding: 2rem;
+  }
 }
