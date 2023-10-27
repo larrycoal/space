@@ -133,6 +133,12 @@
   .commander_wrapper, .specialist_wrapper, .pilot_wrapper, .engineer_wrapper {
 align-items: flex-end;
   }
+  .crew_wrapper .left h2 span:nth-child(2){
+    font-size: 20px;
+  }
+  .crew_wrapper .left h2 span:nth-child(1){
+    font-size: 20px;
+  }
    .crew_wrapper .container .left{
     margin-top: 0;
   }
@@ -147,18 +153,20 @@ align-items: flex-end;
     width: 300px;
   }
   .crew_wrapper .left h2{
-    margin: 1rem 0;
-    font-size: 16px;
+    margin: 10px 0;
+    font-size: 15px;
     text-align: center;
   }
   .crew_details p:nth-child(1){
-    font-size: 20px;
+    font-size: 15px;
   }
   .crew_details h1{
-    font-size: 28px;
+    font-size: 20px;
   }
   .crew_details p:nth-child(3){
     font-size: 16px;
-    margin: 1rem 0;
+    margin: 10px 0;
+    line-height: 25px;
+    letter-spacing: 1px;
   }
 }

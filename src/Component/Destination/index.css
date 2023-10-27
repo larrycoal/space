@@ -127,8 +127,8 @@
 }
 @media screen and (max-width: 700px){
   .destination_wrapper .bottom img{
-    height: 259px;
-    width: 259px;
+    height: 170px;
+    width: 170px;
   }
   .destination_wrapper .right ul{
     font-size: 14px;
@@ -137,18 +137,24 @@
     height: fit-content;
   }
   .destination_wrapper .right h1{
-    font-size: 56px;
+    font-size: 40px;
   }
   .destination_wrapper .right .destination_details{
     font-size: 15px;
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px 0;
+  }
+  .destination_wrapper .destination_sub{
+   padding: 5px 0;
   }
   .destination_wrapper .destination_sub p span:nth-child(2){
-    font-size: 20px;
+    font-size: 16px;
   }
+    .destination_wrapper .destination_sub p span:nth-child(1){
+      font-size: 12px;
+    }
   .destination_wrapper .top{
-    margin: 1rem auto;
+    margin: 5px auto;
    
   }
   .destination_wrapper .top h3{

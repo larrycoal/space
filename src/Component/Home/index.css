@@ -132,17 +132,23 @@
      transform: none;
   }
   .home_wrapper .left{
-    margin: 2rem 2rem;
+    margin: 1rem ;
     padding-top: 4rem;
   }
   .home_wrapper .left p {
     font-size: 16px;
   }
+  .home_wrapper  .right{
+    margin: 1rem 0;
+    align-items: center;
+  }
   .home_wrapper .left h2{
-    font-size: 80px;
+    font-size: 40px;
+    margin: 10px 0;
   }
   .home_wrapper .left p:nth-child(3){
     font-size: 15px;
+    line-height: 25px;
   }
   .home_wrapper .right .explore{
     height: 150px;

@@ -74,10 +74,12 @@
   }
   .header_logo {
     margin: 0 2rem;
+    height: 20px;
   }
   .hamburger {
     display: block;
     margin: 0 2rem;
+    height: 20px;
   }
   .hamburger img {
     height: 100%;

@@ -181,34 +181,44 @@
     padding: 2rem;
   }
 }
-@media screen and (max-width: 700px){
-    .technology_wrapper > .container{
-        margin: 3rem 0;
-    }
-    .technology_wrapper .header{
-        font-size: 16px;
-        text-align: center;
-    }
-    .technology_wrapper > .container > .content_wrapper > .navigation ul li{
-        width: 40px;
-        height: 40px;
-    }
-    .technology_wrapper .right img{
-        aspect-ratio: 4/2;
-    }
-    .technology_wrapper .content_wrapper .content .left h1{
-        font-size: 28px;
-    }
-    .technology_wrapper .content_wrapper .content .left p:nth-child(3){
-        font-size: 16px;
-        width: 80%;
-    }
-      .technology_wrapper .content_wrapper .content .launch,
+@media screen and (max-width: 700px) {
+  .technology_wrapper > .container {
+    margin: 1rem 0;
+  }
+  .technology_wrapper .header {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+  .technology_wrapper > .container h2 {
+    font-size: 20px;
+  }
+  .technology_wrapper > .container > .content_wrapper > .navigation ul li {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .technology_wrapper .right img {
+    aspect-ratio: 4/2;
+  }
+  .technology_wrapper .content_wrapper .content .left h1 {
+    font-size: 20px;
+  }
+  .technology_wrapper .content_wrapper .content .left p:nth-child(3) {
+    font-size: 15px;
+    width: 80%;
+    line-height: 25px;
+    margin: 5px 0;
+  }
+  .technology_wrapper .content_wrapper .content .left {
+
+  }
+  .technology_wrapper .content_wrapper .content .launch,
   .technology_wrapper .content_wrapper .content .spacesport,
-  .technology_wrapper .content_wrapper .content .capsule{
+  .technology_wrapper .content_wrapper .content .capsule {
     gap: 1rem;
   }
-  .technology_wrapper > .container > .content_wrapper{
+  .technology_wrapper > .container > .content_wrapper {
     gap: 1rem;
   }
 }
